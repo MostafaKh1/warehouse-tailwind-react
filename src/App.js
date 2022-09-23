@@ -1,23 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+// animations Aos
+import Aos from "aos";
+import "aos/dist/aos.css";
+
+import React from "react";
+import Hero from "./components/Hero";
+import About from "./components/About";
+import Features from "./components/Features";
+import Testimonials from "./components/Testimonials";
+import Cta from "./components/Cta";
+import Footer from "./components/Footer";
 
 function App() {
+  Aos.init({
+    duration: 1800,
+    offset: 0,
+  });
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className=" overflow-hidden">
+      <Hero />
+      <About />
+      <Features />
     </div>
   );
 }

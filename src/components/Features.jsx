@@ -25,7 +25,7 @@ export default function Features() {
           </p>
         </div>
         {/* list */}
-        <div className="grid grid-cols-1 gap-[50px] xl:grid-cols-2">
+        <div className="grid grid-cols-1 gap-[50px] lg:grid-cols-2">
           {list.map((ele, i) => {
             // destructure
             const { title, bgImage, delay, description, image, linkText } = ele;

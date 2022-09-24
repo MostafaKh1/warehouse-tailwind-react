@@ -16,10 +16,13 @@ function App() {
     offset: 0,
   });
   return (
-    <div className=" overflow-hidden">
+    <div>
       <Hero />
       <About />
       <Features />
+      <Testimonials />
+      <Cta />
+      <Footer />
     </div>
   );
 }
